@@ -10,7 +10,7 @@
         </v-layout>
         <v-layout style="margin-bottom: 10rem">
             <v-flex xs12>
-                <v-carousel height="auto">
+                <v-carousel hide-delimiters height="auto">
                     <v-carousel-item
                     v-for="(banner,i) in banners"
                     :key="i"

@@ -21,7 +21,9 @@
     <v-toolbar dark style="background-color: rgb(102, 45, 145)">
       <v-app-bar-nav-icon @click.stop="sideNav = !sideNav" class="hidden-sm-and-up"></v-app-bar-nav-icon>
       <v-toolbar-title>
-        <router-link to="/" tag="span" style="cursor:pointer">Perfectly Painted</router-link> 
+        <v-layout row align-center justify-center fill-height pt-1 style="width: 16%">
+          <v-flex><span><router-link to="/" tag="span" style="cursor:pointer"><v-img :src="banner_logo" ></v-img></router-link></span></v-flex>
+        </v-layout>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-xs-only">
@@ -79,6 +81,7 @@ export default {
         {logo: 'mdi-facebook', link: 'https://www.facebook.com/Perfectly-Painted-101008504584374'},
         {logo: 'mdi-instagram', link: 'https://www.instagram.com/perfectlypainted.co/'}
       ],
+      banner_logo: require('./assets/navbar_logo.png')
   }),
 };
 </script>
