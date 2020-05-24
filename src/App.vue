@@ -35,7 +35,7 @@
     <main>
       <router-view></router-view>
     </main>
-    <v-footer padless dark color="black">
+    <v-footer dark color="black" style="position: absolute; right: 0; bottom:0; left:0;">
     <v-card flat tile class="black lighten-1 white--text text-center mx-auto">
       <v-card-text>
         <v-btn

@@ -8,7 +8,7 @@
                 <v-btn large router to="/Contact" style="background-color: rgb(164, 236, 33)">Get an estimate</v-btn>
             </v-flex>
         </v-layout>
-        <v-layout>
+        <v-layout style="margin-bottom: 10rem">
             <v-flex xs12>
                 <v-carousel height="auto">
                     <v-carousel-item
