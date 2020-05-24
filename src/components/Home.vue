@@ -18,6 +18,11 @@
                     reverse-transition="fade-transition"
                     transition="fade-transition">
                     </v-carousel-item>
+                    <v-carousel-item
+                    reverse-transition="fade-transition"
+                    transition="fade-transition">
+                    <iframe width="100%" height="500" :src="bannerMovie" frameborder="0" allow="encrypted-media"></iframe>
+                    </v-carousel-item>
                 </v-carousel>
             </v-flex>
         </v-layout>
@@ -29,8 +34,9 @@ export default {
     data (){
         return{
             banners: [
-                {image: require('../assets/banner.png')}
-            ]
+                {image: require('../assets/banner.png')},
+            ],
+            bannerMovie: require('../assets/BannerMovie.mp4')
         }
     }
 }
